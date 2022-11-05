@@ -1,8 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+<<<<<<< HEAD
 import './index.scss';
 import App from './App'
 import { BrowserRouter } from 'react-router-dom';
+=======
+import  { BrowserRouter} from 'react-router-dom';
+import './index.scss';
+import App from './App';
+>>>>>>> 95c4e9b18f4b2a467654cc52220cd01bb2f21dbe
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -11,7 +17,10 @@ root.render(
     <BrowserRouter>
     <App />
     </BrowserRouter>
+<<<<<<< HEAD
     
+=======
+>>>>>>> 95c4e9b18f4b2a467654cc52220cd01bb2f21dbe
   </React.StrictMode>
 );
 
