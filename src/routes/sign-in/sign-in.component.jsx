@@ -17,7 +17,7 @@ const Sign=()=>{
     return(
         <div>
             
-            <h5>Sign In</h5>
+            <h5>SIGN IN</h5>
             <button onClick={logGoogleUser}>
                 Sign with Google account
             </button>
