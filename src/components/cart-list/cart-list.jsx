@@ -1,4 +1,5 @@
 import { useContext } from "react";
+import { useNavigate } from "react-router-dom";
 import Button from "../button/button.component";
 import { CartContext } from "../../context/cart.context";
 import CartItem from "../cart-items/cart-items";
@@ -6,7 +7,9 @@ import "./cart-list.scss";
 
 const CartList = () => {
   const { addItem } = useContext(CartContext);
-  console.log(addItem);
+  
+  const navigate=useNavigate();
+  const goToOrder=()=>navigate('/orders');
 
   return (
     <div className="cart-list-container">
@@ -15,7 +18,7 @@ const CartList = () => {
           <CartItem key={item.id} cartItem={item} />
         ))}
       </div>
-      <Button>Go to Orders</Button>
+      <Button onClick={goToOrder}>Go to Orders</Button>
     </div>
   );
 };

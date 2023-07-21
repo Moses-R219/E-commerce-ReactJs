@@ -42,7 +42,6 @@
   "main": "index.js",
   "author": "",
   "license": "ISC",
-  "devDependencies": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Moses-R219/E-commerce-ReactJs.git"
