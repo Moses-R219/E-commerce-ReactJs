@@ -4,7 +4,7 @@ import "./orders.scss";
 import OrderItem from "../../components/order-item/order-item";
 
 const Orders = () => {
-  const { addItem, addItemToCart, removeItemFromCart } =
+  const { addItem,cartPrice } =
     useContext(CartContext);
 
   return (
@@ -30,7 +30,7 @@ const Orders = () => {
       {addItem.map((cartItem) => 
       <OrderItem key={cartItem.id} cartItem={cartItem}/>
       )}
-      <span className="tot">Total:</span>
+      <span className="tot">Total:{cartPrice}</span>
     </div>
   );
 };
